@@ -1,0 +1,80 @@
+
+*{
+    font-family: sans-serif;
+    color: #7e7c7c;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #bdd0d3;
+    display: flex;
+}
+
+.sidebar{
+    background-color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 10px;
+    position: relative;
+    display: none;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    background: #2fa8ee;
+    color: white;
+    padding: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.links.mt{
+    margin-top: 60px;
+}
+
+.links .link{
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: all 2s;
+    border-radius: 0 100px 100px 0;
+}
+
+.links .link:hover{
+    background-color: #2fa8ee;
+    color: white;
+    transition: background-color 1s;
+}
+
+.links .link:hover .fa{
+    color: white;
+}
+.links .link.active{
+    background-color: #fd7979;
+    color: white;
+}
+.links .link.active .fa{
+    color: white;
+}
+
+.main{
+    width: 100%;
+}
+
+.main .head{
+    background: white;
+    padding: 20px;
+}
+
+.icon{
+    padding: 0 12px;
+    cursor: pointer;
+}
